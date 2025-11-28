@@ -1,0 +1,130 @@
+/* Estilo Global */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #dfe8ff, #f7faff);
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header-top {
+    background: linear-gradient(to bottom right, #1d6fff, #32a5ff);
+    padding: 20px 20px 25px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+
+.back-btn {
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+
+.deck-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Tab */
+.tabs {
+    display: flex;
+    background: white;
+    padding: 0 20px;
+    transform: translateY(10px);   /* empurra para baixo sem quebrar layout */
+}
+
+.tab {
+    flex: 1;
+    padding: 14px 0;
+    text-align: center;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #777;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #005aff;
+    font-weight: bold;
+    border-bottom: 3px solid #005aff;
+}
+
+/* PRINCIPAL */
+/* Conteúdo */
+.content {
+    padding: 30px 20px 20px; 
+}
+/* Descrição */
+.description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 20px;
+}
+/* Card de Info */
+.item-card {
+    background: white;
+    padding: 18px;
+    border-radius: 20px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.item-title {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.item-progress {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    font-weight: bold;
+    color: #222;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+    width: 100%;
+    height: 7px;
+    background: #e4e4e4;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+
+.progress {
+    height: 100%;
+    background: #1d6fff;
+    border-radius: 4px;
+}
+
+.flag-icon {
+    width: 22px;
+    position: absolute;
+    right: 20px;
+    top: 27px;
+}
+
+/* Botão */
+.study-btn {
+    margin-top: 20px;
+    width: 100%;
+    background: #1d6fff;
+    color: white;
+    padding: 15px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.22);
+}
+

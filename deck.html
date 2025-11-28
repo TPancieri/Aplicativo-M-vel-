@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baralho</title>
+    <link rel="stylesheet" href="deck.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-top">
+        <span id="back-btn" class="back-btn">←</span>
+
+        <!-- Dinamico -->
+        <h1 id="deck-title" class="deck-title">Carregando...</h1>
+    </header>
+
+    <!-- Tabs -->
+    <nav class="tabs">
+        <button class="tab active">Sobre</button>
+        <button class="tab" id="edit-tab">Editar</button>
+    </nav>
+
+    <!-- Conteúdo da tab "Sobre" -->
+    <div class="content decks-content">
+
+        <!-- Descrição do bloco -->
+        <p id="deck-description" class="description">
+            Carregando descrição...
+        </p>
+
+        <div class="item-card">
+            <span class="item-title">Estudar</span>
+
+            <!-- Progresso atual -->
+            <span id="deck-progress-text" class="item-progress">0/0</span>
+
+            <div class="progress-bar">
+                <!-- Largura da barra preenchida dinamicamente -->
+                <div id="deck-progress-bar" class="progress" style="width: 0%;"></div>
+            </div>
+
+            <button id="study-btn" class="study-btn">Estudar</button>
+        </div>
+
+    </div>
+
+    <script src="deck.js"></script>
+</body>
+
+</html>

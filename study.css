@@ -1,0 +1,99 @@
+/*Estilo Geral*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4A73FF, #1177FF);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header*/
+.study-header {
+    padding: 25px 20px;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.flag-icon {
+    width: 22px;
+    position: absolute;
+    right: 20px;
+    top: 27px;
+}
+
+.study-title {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+/* Card */
+.card-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard {
+    background: white;
+    width: 80%;
+    max-width: 330px;
+    padding: 25px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.card-number {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.card-text {
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 1.4;
+    color: #444;
+}
+
+/* Botão */
+.reveal-btn {
+    background: #FFA736;
+    color: white;
+    border: none;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.answer-actions {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+}
+
+.action-btn {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.15s ease;
+    margin-bottom: 20px;   
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}

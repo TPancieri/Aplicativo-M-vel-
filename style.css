@@ -1,0 +1,178 @@
+/* Estilo Global */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #eaf1ff, #ffffff);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 380px;
+    margin: auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Estatísticas */
+.stats {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat {
+    flex: 1;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.stat p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.purple {
+    background: #f0e8ff;
+}
+
+.orange {
+    background: #ffe8cf;
+}
+
+/* Seção de Conteúdos */
+.section-title {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.category {
+    color: #1c6df2;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Barra do POPUP */
+.bottom-nav {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    width: 90%;
+    max-width: 380px;
+    border-radius: 40px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.nav-center {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: white;
+    position: relative;
+    top: -25px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+/*  POPUP  */
+
+.hidden {
+    display: none !important;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.popup {
+    background: white;
+    width: 85%;
+    max-width: 360px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.25);
+    text-align: center;
+    animation: popupEnter .25s ease-out;
+    position: relative;
+}
+
+@keyframes popupEnter {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Botões */
+.popup-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #1d6fff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.popup-btn.outline {
+    background: white;
+    color: #1d6fff;
+    border: 2px solid #1d6fff;
+}
+
+.close-popup {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}

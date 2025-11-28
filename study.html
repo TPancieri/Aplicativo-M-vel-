@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estudo</title>
+    <link rel="stylesheet" href="study.css" />
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <div class="study-header">
+        <span class="back-arrow">←</span>
+        <img src="img/icons/question.png" class="flag-icon" />
+        <h1 class="study-title">Carregando...</h1>
+    </div>
+
+    <!-- Card da Perg -->
+    <div class="card-container">
+        <div class="flashcard">
+            <h2 class="card-number">1</h2>
+            <p class="card-text">Carregando...</p>
+        </div>
+    </div>
+
+    <!-- Botão de revelar (mostra só antes de revelar) -->
+    <button id="reveal-btn" class="reveal-btn">Revelar Resposta</button>
+
+    <!-- Ações pós -->
+    <div id="answer-actions" class="answer-actions" style="display: none;">
+        <img id="wrong-btn" src="img/icons/close.png" class="action-btn" />
+        <img id="restart-btn" src="img/icons/turn-left.png" class="action-btn" />
+        <img id="correct-btn" src="img/icons/check.png" class="action-btn" />
+    </div>
+    <script src="study.js"></script>
+</body>
+
+</html>

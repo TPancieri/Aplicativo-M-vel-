@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="title">Dashboard</h1>
+
+        <!-- Estatísticas do usuário -->
+        <div class="stats">
+            <div class="stat purple">
+                <h2>0</h2>
+                <p>Cartões Estudados</p>
+            </div>
+            <div class="stat orange">
+                <h2>0</h2>
+                <p>Blocos Criados</p>
+            </div>
+        </div>
+
+        <!-- Cartões Criar/Import-->
+        <h2 class="section-title">Conteúdos</h2>
+        <div id="blocks-container"></div>
+
+        <!-- POPUP -->
+        <div id="popup-overlay" class="overlay hidden">
+            <div class="popup">
+                <button class="close-popup">×</button>
+
+                <h2 class="popup-title">Adicionar Novos Flashcards</h2>
+
+                <!-- redireciona para novo-bloco.html-->
+                <button class="popup-btn">Cadastrar novo bloco</button>
+                <!-- abre o negocio de procurar arquivo-->
+                <button class="popup-btn outline">Importar bloco</button>
+            </div>
+        </div>
+
+        <!-- Barra de Navegação -->
+        <div class="bottom-nav">
+            <div class="nav-center">✏️</div>
+        </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,159 @@
+/*Estilo Geral*/
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #dfe8ff, #f7faff);
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header-top {
+    background: linear-gradient(to bottom right, #1d6fff, #32a5ff);
+    padding: 20px 20px 25px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    color: white;
+    position: relative;
+    text-align: left;
+}
+
+.back-btn {
+    font-size: 22px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.deck-title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Conteiner */
+.content {
+    padding: 30px 20px 20px;
+}
+
+/* Caixa branca onde edita-se nome e descrição */
+.block-edit {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+
+.block-edit label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.block-edit input {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Contêiner dos Cards*/
+#cards-container {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+#cards-container .card-item {
+    position: relative;
+    z-index: 1; /* mantém botão de excluir acima do cartão */
+}
+
+
+/* Quadrado de cada flashcard */
+.flash-input {
+    background: white;
+    padding: 15px;
+    border-radius: 16px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    position: relative;
+}
+
+.flash-input label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.flash-input input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Botão excluir dentro do cartão */
+.delete-card {
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    background: #ff5959;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.delete-card:hover {
+    background: #ff2e2e;
+}
+
+/* Botões principais da página */
+#add-card-btn, #save-block-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    background: #1d6fff;
+    color: white;
+}
+
+/* CARDS DO BLOCO */
+/* CONTÊINER DE CARTÕES */
+#cards-container {
+    margin-top: 40px; /* aumentei para empurrar os cartões para baixo */
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* espaço entre os cartões */
+}
+
+/* Garantir que cada cartão tenha posicionamento adequado */
+#cards-container .card-item {
+    position: relative;
+    z-index: 1; /* mantém botão de excluir acima do cartão */
+}
+
+
+
+/* Botões*/
+#add-card-btn, #save-block-btn {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.22);
+    color: white;
+    background: #1d6fff;
+}
+
+#add-card-btn:hover, #save-block-btn:hover {
+    background: #005aff;
+}

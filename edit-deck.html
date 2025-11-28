@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Bloco</title>
+    <link rel="stylesheet" href="edit.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header-top">
+        <span id="back-btn" class="back-btn">←</span>
+        <h1 class="deck-title">Editar Bloco</h1>
+    </header>
+
+    <!-- Conteúdo -->
+    <div class="content decks-content">
+
+        <!-- Nome e Desc -->
+        <div class="block-edit">
+            <label>Nome do Bloco</label>
+            <input type="text" id="edit-block-name">
+            <label>Descrição (opcional)</label>
+            <input type="text" id="edit-block-description">
+        </div>
+
+        <!-- Info -->
+        <h3>Cartões do bloco</h3>
+        <div id="cards-container"></div>
+        <button id="add-card-btn" class="study-btn">Adicionar Novo Cartão</button>
+        <button id="save-block-btn" class="study-btn">Salvar Alterações</button>
+
+    </div>
+
+    <script src="edit-deck.js"></script>
+</body>
+
+</html>

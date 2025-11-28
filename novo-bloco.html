@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novo Flashcard</title>
+    <link rel="stylesheet" href="new-card.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <div class="menu" id="back-btn">←</div>
+            <h1 class="title">Novo Flashcard</h1>
+        </div>
+
+        <!-- Nome -->
+        <div class="block-name-field">
+            <label class="floating-label">Nome do Bloco</label>
+            <input id="blockName" type="text" placeholder="Ex: Fundamentos da Programação">
+        </div>
+
+        <!-- Desc -->
+        <div class="block-name-field">
+            <label class="floating-label">Descrição do Bloco (opcional)</label>
+            <input id="blockDescription" type="text" placeholder="Ex: Bloco sobre conceitos básicos de programação">
+        </div>
+
+        <!-- Frente -->
+        <div class="flash-input">
+            <label class="floating-label">Parte da Frente</label>
+            <textarea id="frontText"></textarea>
+        </div>
+
+        <!-- Trás -->
+        <div class="flash-input">
+            <label class="floating-label">Parte de Trás</label>
+            <textarea id="backText"></textarea>
+        </div>
+
+        <!--Botão -->
+        <div class="action-row">
+            <button class="btn cancel" id="finish-btn">Finalizar</button>
+            <button id="add-btn" class="btn add">Adicionar</button>
+        </div>
+    </div>
+
+    <script src="flashcards.js"></script>
+</body>
+
+</html>
